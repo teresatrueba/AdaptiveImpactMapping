@@ -1,0 +1,2836 @@
+{
+  "version": 1,
+  "name": "Impact Mining",
+  "description": "",
+  "proxyImages": true,
+  "defaultMap": "map-pS8dPqab",
+  "defaultPerspective": null,
+  "attributeRelevance": {},
+  "attributes": [
+    {
+      "name": "Beneficiaries",
+      "format": "string",
+      "private": false,
+      "limit": "none",
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [
+        "Households",
+        "Schools",
+        "Medical",
+        "NGO",
+        "Investor",
+        "Household"
+      ],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "name": "Beneficiary Metric",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "name": "Company Metric",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-VEPofsZO",
+      "name": "Connection Type",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [
+        "+",
+        "-",
+        "++",
+        "+-",
+        "-+",
+        "--",
+        "Same",
+        "Opposite",
+        "Metric",
+        "Flow"
+      ],
+      "sort": false,
+      "cluster": false
+    },
+    {
+      "_id": "attr-mQkPMfp6",
+      "name": "Description",
+      "format": "text",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "none",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": false
+    },
+    {
+      "_id": "attr-FApTDUiO",
+      "name": "Element Type",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [
+        "Complexity",
+        "Impact Investment",
+        "Element Type",
+        null,
+        "Stock",
+        "Flow",
+        "Variable",
+        "Source",
+        "Sink",
+        null
+      ],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "name": "Impact Investor",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-fd3ebQB8",
+      "name": "Label",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": false
+    },
+    {
+      "_id": "attr-iiKnnOgT",
+      "name": "Loop Type",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [
+        "Reinforcing",
+        "Balancing",
+        "Vicious",
+        "Virtuous",
+        "Stabilizing",
+        "Stagnating"
+      ],
+      "sort": false,
+      "cluster": false
+    },
+    {
+      "name": "Productive Use",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-QJZlxyip",
+      "name": "Result Level",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-2YukBcbW",
+      "name": "Tags",
+      "format": "string",
+      "private": false,
+      "limit": "none",
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [
+        "Information",
+        "Analysis",
+        "Innovation",
+        "Strategy",
+        "Action"
+      ],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "name": "Technologies",
+      "format": "number",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [
+        3,
+        2,
+        1,
+        -1
+      ],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "name": "Time for Impact",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [
+        "Medium",
+        "Short",
+        "Long",
+        null
+      ],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-wXgIK5pr",
+      "name": "betweenness",
+      "format": "number",
+      "private": false,
+      "limit": 1,
+      "category": "Metrics",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-udoGybsE",
+      "name": "closeness",
+      "format": "number",
+      "private": false,
+      "limit": 1,
+      "category": "Metrics",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-nrsns3ay",
+      "name": "degree",
+      "format": "number",
+      "private": false,
+      "limit": 1,
+      "category": "Metrics",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-GMOQZ6Cb",
+      "name": "metrics::last",
+      "format": "number",
+      "private": false,
+      "limit": 1,
+      "category": "Metrics",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": true
+    }
+  ],
+  "elements": [
+    {
+      "_id": "elem-08xBiYA1",
+      "attributes": {
+        "label": "Generative Causation",
+        "element type": "Complexity"
+      }
+    },
+    {
+      "_id": "elem-1i91UDGy",
+      "attributes": {
+        "label": "Survival",
+        "element type": "Sustainable Development",
+        "tags": [
+          "Strategy"
+        ],
+        "result level": "Impact",
+        "closeness": 0.13793103448275862,
+        "metrics::last": 0,
+        "degree": 1,
+        "betweenness": 0
+      }
+    },
+    {
+      "_id": "elem-2a1eAZeZ",
+      "attributes": {
+        "label": "Framework for MEL",
+        "element type": "Element Type",
+        "image": "https://www.cecan.ac.uk/resources/toolkits/",
+        "description": "https://www.cecan.ac.uk/resources/toolkits/\n\nChoosing Appropriate Evaluation Methods Tool (Link to Excel Spreadsheet)"
+      }
+    },
+    {
+      "_id": "elem-2rXGimlz",
+      "attributes": {
+        "label": "Information Flows",
+        "element type": "Complexity"
+      }
+    },
+    {
+      "_id": "elem-3EXzEqjb",
+      "attributes": {
+        "label": "Statistical Matching",
+        "element type": "Complexity"
+      }
+    },
+    {
+      "_id": "elem-3LCNUAqK",
+      "attributes": {
+        "label": "Predctive/Modelling",
+        "element type": "Complexity"
+      }
+    },
+    {
+      "_id": "elem-46dDYY9K",
+      "attributes": {
+        "label": "e"
+      }
+    },
+    {
+      "_id": "elem-4Twe8pyv",
+      "attributes": {
+        "label": "Matter",
+        "tags": [
+          "Matter"
+        ]
+      }
+    },
+    {
+      "_id": "elem-4Unvw1xB",
+      "attributes": {
+        "label": "Outcome Mapping",
+        "element type": "Impact Investment"
+      }
+    },
+    {
+      "_id": "elem-4ptjicaf",
+      "attributes": {
+        "label": "Impact",
+        "element type": "Result Level",
+        "degree": 7,
+        "metrics::last": 7
+      }
+    },
+    {
+      "_id": "elem-5knpJJK5",
+      "attributes": {
+        "label": "Adaptive",
+        "element type": "Element Type"
+      }
+    },
+    {
+      "_id": "elem-6a2R0UXz",
+      "attributes": {
+        "label": "Multi Tier Framework",
+        "element type": "Impact Investment",
+        "description": "https://energypedia.info/images/0/04/Gaul%2C_Mirco_et_al._-_2019_-_The_Impact_of_Rural_Electrification.pdf"
+      }
+    },
+    {
+      "_id": "elem-7XsnZlWu",
+      "attributes": {
+        "label": "Techniques for Evaluation"
+      }
+    },
+    {
+      "_id": "elem-8jwPVkMI",
+      "attributes": {
+        "label": "Problem",
+        "element type": "Result Level",
+        "betweenness": 0.007389162561576354,
+        "metrics::last": 0.007389162561576354
+      }
+    },
+    {
+      "_id": "elem-8nNw9FBl",
+      "attributes": {
+        "label": "Investments Opportunity",
+        "element type": "Impact Investment"
+      }
+    },
+    {
+      "_id": "elem-9XUbjh8i",
+      "attributes": {
+        "label": "Multi Tier Framework",
+        "element type": "Impact Investment",
+        "tags": [
+          "Information"
+        ],
+        "result level": "Outputs",
+        "closeness": 0.06896551724137931,
+        "metrics::last": 0,
+        "degree": 1,
+        "betweenness": 0
+      }
+    },
+    {
+      "_id": "elem-AC8kLvdw",
+      "attributes": {
+        "label": "Attribution Problem",
+        "element type": "Impact Investment",
+        "tags": [
+          "Action"
+        ],
+        "result level": "Outcomes",
+        "closeness": 0.1206896551724138,
+        "metrics::last": 0,
+        "degree": 1,
+        "betweenness": 0
+      }
+    },
+    {
+      "_id": "elem-AwHoAIt8",
+      "attributes": {
+        "label": "Outcomes",
+        "element type": "Result Level",
+        "degree": 6,
+        "metrics::last": 6
+      }
+    },
+    {
+      "_id": "elem-BDIlQNSO",
+      "attributes": {
+        "label": "Agreement and Certainity",
+        "element type": "Impact Investment"
+      }
+    },
+    {
+      "_id": "elem-BcixMymM",
+      "attributes": {
+        "label": "RISE Indicators",
+        "element type": "Impact Investment",
+        "tags": [
+          "Strategy"
+        ],
+        "result level": "Inputs",
+        "closeness": 0.1206896551724138,
+        "metrics::last": 0,
+        "degree": 1,
+        "betweenness": 0,
+        "description": "BigML with Scores https://rise.esmap.org/scoring-system and the report https://rise.esmap.org/reports"
+      }
+    },
+    {
+      "_id": "elem-C7QOXeNu",
+      "attributes": {
+        "label": "Casual Loop Diagrams",
+        "element type": "Complexity",
+        "description": "https://www.diva-portal.org/smash/get/diva2:1202878/FULLTEXT01.pdf  page 73"
+      }
+    },
+    {
+      "_id": "elem-CXzSmFp2",
+      "attributes": {
+        "label": "Empathy",
+        "element type": "Sustainable Development",
+        "tags": [
+          "Innovation"
+        ],
+        "result level": "Impact",
+        "closeness": 0.13793103448275862,
+        "metrics::last": 0,
+        "degree": 1,
+        "betweenness": 0
+      }
+    },
+    {
+      "_id": "elem-D4slyfE2",
+      "attributes": {
+        "label": "Quantitive",
+        "element type": "Impact Investment",
+        "tags": [
+          "Information"
+        ],
+        "result level": "Outputs",
+        "closeness": 0.06896551724137931,
+        "metrics::last": 0,
+        "degree": 1,
+        "betweenness": 0
+      }
+    },
+    {
+      "_id": "elem-E2GspnDL",
+      "attributes": {
+        "label": "Theory of Change",
+        "element type": "Element Type",
+        "description": "https://www.government.nl/binaries/government/documenten/reports/2013/03/01/iob-study-renewable-energy-access-and-impact/iob-study-renewable-energy-access-and-impact.pdf"
+      }
+    },
+    {
+      "_id": "elem-FYADYlNb",
+      "attributes": {
+        "label": "Open data",
+        "element type": "Complexity",
+        "description": "https://sdgcompass.org/business-indicators/?filter_sdg_goal=&ref_filter_sdg_target=&filter_biz_theme=&filter_indic_type=&filter_indic_source=&filter_date=&custom_tool_search=investment"
+      }
+    },
+    {
+      "_id": "elem-Fz2JpMD6",
+      "attributes": {
+        "label": "Market Mapping",
+        "element type": "Impact Investment",
+        "description": "https://rise.esmap.org/data/files/library/uganda/Renewable%20Energy/Supporting%20Documentation/Uganda_Market-Map%20of%20Off%20Grid%20Energy,%20Uganda%20,2019.pdf"
+      }
+    },
+    {
+      "_id": "elem-GAbjzVga",
+      "attributes": {
+        "label": "Communication",
+        "element type": "Impact Investment",
+        "tags": [
+          "Information"
+        ],
+        "result level": "Impact",
+        "closeness": 0.13793103448275862,
+        "metrics::last": 0,
+        "degree": 1,
+        "betweenness": 0
+      }
+    },
+    {
+      "_id": "elem-GAoCTRuo",
+      "attributes": {
+        "label": "Lean Data",
+        "element type": "Impact Investment",
+        "description": "https://60decibels.com/user/pages/energy-report/60%20Decibels%20-%20Why%20Off-Grid%20Energy%20Matters.pdf"
+      }
+    },
+    {
+      "_id": "elem-HHxrkW0I",
+      "attributes": {
+        "label": "Impact",
+        "element type": "Result Level",
+        "betweenness": 0.05172413793103448,
+        "metrics::last": 0.05172413793103448
+      }
+    },
+    {
+      "_id": "elem-I8HeMrV3",
+      "attributes": {
+        "label": "Nature",
+        "element type": "Sustainable Development",
+        "tags": [
+          "Information"
+        ],
+        "result level": "Impact",
+        "closeness": 0.13793103448275862,
+        "metrics::last": 0,
+        "degree": 1,
+        "betweenness": 0
+      }
+    },
+    {
+      "_id": "elem-IhDsS153",
+      "attributes": {
+        "label": "Energy",
+        "element type": "Energy"
+      }
+    },
+    {
+      "_id": "elem-JC5eCnuF",
+      "attributes": {
+        "label": "Inputs",
+        "element type": "Result Level",
+        "betweenness": 0.03694581280788178,
+        "metrics::last": 0.03694581280788178
+      }
+    },
+    {
+      "_id": "elem-KPkTro5q",
+      "attributes": {
+        "label": "Qualitative Comparative Analysis",
+        "element type": "Complexity"
+      }
+    },
+    {
+      "_id": "elem-LHKqKxyL",
+      "attributes": {
+        "label": "Soft Systems Modelling",
+        "element type": "Complexity"
+      }
+    },
+    {
+      "_id": "elem-LZR05zSm",
+      "attributes": {
+        "label": "Human Values",
+        "element type": "Sustainable Development",
+        "tags": [
+          "Innovation"
+        ],
+        "result level": "Problem",
+        "closeness": 0.06896551724137931,
+        "metrics::last": 0,
+        "degree": 1,
+        "betweenness": 0
+      }
+    },
+    {
+      "_id": "elem-LpkjM6er",
+      "attributes": {
+        "label": "Most Significant Change",
+        "element type": "Complexity"
+      }
+    },
+    {
+      "_id": "elem-MXdUs6Va",
+      "attributes": {
+        "label": "Outcomes",
+        "element type": "Result Level",
+        "betweenness": 0.03694581280788178,
+        "metrics::last": 0.03694581280788178
+      }
+    },
+    {
+      "_id": "elem-PLgOn0rN",
+      "attributes": {
+        "label": "Informatio"
+      }
+    },
+    {
+      "_id": "elem-QHvm6t51",
+      "attributes": {
+        "label": "Agent Based Modelling",
+        "element type": "Complexity"
+      }
+    },
+    {
+      "_id": "elem-QNYVCbbd",
+      "attributes": {
+        "label": "Shared Knowledge",
+        "element type": "Impact Investment",
+        "tags": [
+          "Innovation"
+        ],
+        "result level": "Problem",
+        "closeness": 0.06896551724137931,
+        "metrics::last": 0,
+        "degree": 1,
+        "betweenness": 0
+      }
+    },
+    {
+      "_id": "elem-QixQBXMK",
+      "attributes": {
+        "label": "Decisions",
+        "element type": "Sustainable Development",
+        "tags": [
+          "Analysis"
+        ],
+        "result level": "Inputs",
+        "closeness": 0.1206896551724138,
+        "metrics::last": 0,
+        "degree": 1,
+        "betweenness": 0
+      }
+    },
+    {
+      "_id": "elem-S0o9b0rU",
+      "attributes": {
+        "label": "quan"
+      }
+    },
+    {
+      "_id": "elem-SxHu2Yws",
+      "attributes": {
+        "label": "Bottom Up",
+        "element type": "Impact Investment",
+        "tags": [
+          "Strategy"
+        ],
+        "result level": "Outcomes",
+        "closeness": 0.1206896551724138,
+        "metrics::last": 0,
+        "degree": 1,
+        "betweenness": 0
+      }
+    },
+    {
+      "_id": "elem-T3A9dNAY",
+      "attributes": {
+        "label": "Classification of Beneficiaries",
+        "element type": "Impact Investment",
+        "description": "https://edoc.hu-berlin.de/bitstream/handle/18452/3842/245.pdf?sequence=1&isAllowed=y"
+      }
+    },
+    {
+      "_id": "elem-UGQlOgcn",
+      "attributes": {
+        "label": "SDGs",
+        "element type": "Sustainable Development",
+        "tags": [
+          "Strategy"
+        ],
+        "result level": "Outcomes",
+        "closeness": 0.1206896551724138,
+        "metrics::last": 0,
+        "degree": 1,
+        "betweenness": 0
+      }
+    },
+    {
+      "_id": "elem-UUtW1x2E",
+      "attributes": {
+        "label": "Risk",
+        "element type": "Impact Investment",
+        "tags": [
+          "Strategy"
+        ],
+        "result level": "Inputs",
+        "closeness": 0.1206896551724138,
+        "metrics::last": 0,
+        "degree": 1,
+        "betweenness": 0
+      }
+    },
+    {
+      "_id": "elem-V91rI6jc",
+      "attributes": {
+        "label": "Bayesian Belief Networks",
+        "element type": "Complexity"
+      }
+    },
+    {
+      "_id": "elem-VwJOftOA",
+      "attributes": {
+        "label": "Inputs",
+        "element type": "Result Level",
+        "closeness": 0.20689655172413793,
+        "metrics::last": 0.20689655172413793
+      }
+    },
+    {
+      "_id": "elem-WxhEKlh4",
+      "attributes": {
+        "label": "Randomized Control Trial"
+      }
+    },
+    {
+      "_id": "elem-XpTlctEt",
+      "attributes": {
+        "label": "Feedback"
+      }
+    },
+    {
+      "_id": "elem-YMYKY9LY",
+      "attributes": {
+        "label": ""
+      }
+    },
+    {
+      "_id": "elem-ZKlVeDRk",
+      "attributes": {
+        "label": "Outputs",
+        "element type": "Result Level",
+        "closeness": 0.10344827586206896,
+        "metrics::last": 0.10344827586206896
+      }
+    },
+    {
+      "_id": "elem-ZV6p94s4",
+      "attributes": {
+        "label": "Policies",
+        "description": "https://www.seforall.org/sites/default/files/Uganda_AA_EN_Released.pdf",
+        "element type": "Impact Investment"
+      }
+    },
+    {
+      "_id": "elem-Zq8BekOO",
+      "attributes": {
+        "label": "Viable Systems Theory",
+        "element type": "Complexity"
+      }
+    },
+    {
+      "_id": "elem-asSqVUGk",
+      "attributes": {
+        "label": "Individual Level",
+        "element type": "Impact Investment",
+        "tags": [
+          "Action"
+        ],
+        "result level": "Outcomes",
+        "closeness": 0.1206896551724138,
+        "metrics::last": 0,
+        "degree": 1,
+        "betweenness": 0
+      }
+    },
+    {
+      "_id": "elem-b1Pm3cKS",
+      "attributes": {
+        "label": "Impact",
+        "element type": "Result Level",
+        "closeness": 0.2413793103448276,
+        "metrics::last": 0.2413793103448276
+      }
+    },
+    {
+      "_id": "elem-bTPhw5Uj",
+      "attributes": {
+        "label": "Realst Evaluation",
+        "element type": "Complexity"
+      }
+    },
+    {
+      "_id": "elem-cBSxhaol",
+      "attributes": {
+        "label": "pop"
+      }
+    },
+    {
+      "_id": "elem-dHXvC31q",
+      "attributes": {
+        "label": "12 leverage points",
+        "element type": "Element Type",
+        "description": "https://www.diva-portal.org/smash/get/diva2:1202878/FULLTEXT01.pdf"
+      }
+    },
+    {
+      "_id": "elem-dPNFlLYd",
+      "attributes": {
+        "label": "SDG Synergies",
+        "element type": "Impact Investment",
+        "tags": [
+          "Information"
+        ],
+        "result level": "Impact",
+        "closeness": 0.13793103448275862,
+        "metrics::last": 0,
+        "degree": 1,
+        "betweenness": 0
+      }
+    },
+    {
+      "_id": "elem-dUEsHYXQ",
+      "attributes": {
+        "label": "Assumptions",
+        "element type": "Element Type"
+      }
+    },
+    {
+      "_id": "elem-eMJd6jnN",
+      "attributes": {
+        "label": "Capital Allocation",
+        "element type": "Impact Investment",
+        "tags": [
+          "Analysis"
+        ],
+        "result level": "Inputs",
+        "closeness": 0.1206896551724138,
+        "metrics::last": 0,
+        "degree": 1,
+        "betweenness": 0
+      }
+    },
+    {
+      "_id": "elem-eZPYXEvB",
+      "attributes": {
+        "label": "Outputs",
+        "element type": "Result Level",
+        "degree": 3,
+        "metrics::last": 3
+      }
+    },
+    {
+      "_id": "elem-eb9QHjv3",
+      "attributes": {
+        "label": "Qualitative"
+      }
+    },
+    {
+      "_id": "elem-fCRRIqBY",
+      "attributes": {
+        "label": "Stakeholder Uganda",
+        "element type": "Impact Investment",
+        "tags": [
+          "Action"
+        ],
+        "result level": "Inputs",
+        "closeness": 0.1206896551724138,
+        "metrics::last": 0,
+        "degree": 1,
+        "betweenness": 0
+      }
+    },
+    {
+      "_id": "elem-fCn4osNZ",
+      "attributes": {
+        "label": "Households",
+        "element type": "Impact Investment",
+        "tags": [
+          "Action"
+        ],
+        "result level": "Outcomes",
+        "closeness": 0.1206896551724138,
+        "metrics::last": 0,
+        "degree": 1,
+        "betweenness": 0
+      }
+    },
+    {
+      "_id": "elem-g0xXCeL3",
+      "attributes": {
+        "label": "Problem",
+        "element type": "Result Level",
+        "degree": 3,
+        "metrics::last": 3
+      }
+    },
+    {
+      "_id": "elem-h0S9pajX",
+      "attributes": {
+        "label": "Economic",
+        "element type": "Impact Investment",
+        "tags": [
+          "action"
+        ],
+        "result level": "Impact",
+        "closeness": 0.13793103448275862,
+        "metrics::last": 0,
+        "degree": 1,
+        "betweenness": 0
+      }
+    },
+    {
+      "_id": "elem-hlR2Dkh7",
+      "attributes": {
+        "label": "Long Term",
+        "element type": "Element Type"
+      }
+    },
+    {
+      "_id": "elem-icq3X8GX",
+      "attributes": {
+        "label": "Participatory System Mapping",
+        "element type": "Complexity",
+        "description": "https://www.researchgate.net/publication/348504784_Building_a_system-based_Theory_of_Change_using_Participatory_Systems_Mapping"
+      }
+    },
+    {
+      "_id": "elem-inhdrHTf",
+      "attributes": {
+        "label": "Scarcity of Resources",
+        "element type": "Sustainable Development",
+        "tags": [
+          "Strategy"
+        ],
+        "result level": "Problem",
+        "closeness": 0.06896551724137931,
+        "metrics::last": 0,
+        "degree": 1,
+        "betweenness": 0
+      }
+    },
+    {
+      "_id": "elem-kPTq63ah",
+      "attributes": {
+        "label": "Income"
+      }
+    },
+    {
+      "_id": "elem-lUttEQ6I",
+      "attributes": {
+        "label": "Human Rights",
+        "element type": "Sustainable Development",
+        "tags": [
+          "Innovation"
+        ],
+        "result level": "Impact",
+        "closeness": 0.13793103448275862,
+        "metrics::last": 0,
+        "degree": 1,
+        "betweenness": 0
+      }
+    },
+    {
+      "_id": "elem-lyGH1Ek0",
+      "attributes": {
+        "label": "Outputs",
+        "element type": "Result Level",
+        "betweenness": 0.007389162561576354,
+        "metrics::last": 0.007389162561576354
+      }
+    },
+    {
+      "_id": "elem-nKRePJO3",
+      "attributes": {
+        "label": "Difference in Differences",
+        "element type": "Complexity"
+      }
+    },
+    {
+      "_id": "elem-nYCkkTLz",
+      "attributes": {
+        "label": "Problem",
+        "element type": "Result Level",
+        "closeness": 0.10344827586206896,
+        "metrics::last": 0.10344827586206896
+      }
+    },
+    {
+      "_id": "elem-nyyxG2W4",
+      "attributes": {
+        "label": "Complexity",
+        "element type": "Complexity"
+      }
+    },
+    {
+      "_id": "elem-ofCWO4tg",
+      "attributes": {
+        "label": "Inputs",
+        "element type": "Result Level",
+        "degree": 6,
+        "metrics::last": 6
+      }
+    },
+    {
+      "_id": "elem-ovzpJFoS",
+      "attributes": {
+        "label": "Outcomes",
+        "element type": "Result Level",
+        "closeness": 0.20689655172413793,
+        "metrics::last": 0.20689655172413793
+      }
+    },
+    {
+      "_id": "elem-pahIbgfM",
+      "attributes": {
+        "label": "Desired Impact",
+        "element type": "Impact Investment"
+      }
+    },
+    {
+      "_id": "elem-psz24tAN",
+      "attributes": {
+        "label": "Contribution Analysis",
+        "element type": "Complexity",
+        "description": "https://openknowledge.worldbank.org/bitstream/handle/10986/31333/9781464813610.pdf Chapter 5"
+      }
+    },
+    {
+      "_id": "elem-r5lquO5j",
+      "attributes": {
+        "label": "Humane Technology Innnovation"
+      }
+    },
+    {
+      "_id": "elem-sb2TN1oc",
+      "attributes": {
+        "label": "Survey Evaluation",
+        "element type": "Impact Investment",
+        "description": "https://edoc.hu-berlin.de/bitstream/handle/18452/3842/245.pdf?sequence=1&isAllowed=y"
+      }
+    },
+    {
+      "_id": "elem-tmtQRkmW",
+      "attributes": {
+        "label": "Families",
+        "element type": "Sustainable Development",
+        "tags": [
+          "Innovation"
+        ],
+        "result level": "Outputs",
+        "closeness": 0.06896551724137931,
+        "metrics::last": 0,
+        "degree": 1,
+        "betweenness": 0
+      }
+    },
+    {
+      "_id": "elem-uJ8uytkM",
+      "attributes": {
+        "label": "Chaos",
+        "element type": "Systems",
+        "tags": [
+          "Analysis"
+        ]
+      }
+    },
+    {
+      "_id": "elem-uqymqAFo",
+      "attributes": {
+        "label": "Population",
+        "element type": "Impact Investment",
+        "tags": [
+          "Analysis"
+        ],
+        "result level": "Outcomes",
+        "closeness": 0.1206896551724138,
+        "metrics::last": 0,
+        "degree": 1,
+        "betweenness": 0
+      }
+    },
+    {
+      "_id": "elem-wUHbQBNg",
+      "attributes": {
+        "label": "Change"
+      }
+    },
+    {
+      "_id": "elem-wjuHYZE6",
+      "attributes": {
+        "label": "Mapping",
+        "element type": "Impact Investment"
+      }
+    },
+    {
+      "_id": "elem-yOkBuf8F",
+      "attributes": {
+        "label": "Process Tracing/Bayesian Updating",
+        "element type": "Complexity"
+      }
+    },
+    {
+      "_id": "elem-znNboeK1",
+      "attributes": {
+        "label": "Optimization",
+        "element type": "Impact Investment",
+        "tags": [
+          "Analysis"
+        ],
+        "result level": "Inputs",
+        "closeness": 0.1206896551724138,
+        "metrics::last": 0,
+        "degree": 1,
+        "betweenness": 0
+      }
+    }
+  ],
+  "connections": [
+    {
+      "_id": "conn-0QWemdhf",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-2a1eAZeZ",
+      "to": "elem-yOkBuf8F"
+    },
+    {
+      "_id": "conn-0r97q4N3",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": ""
+      },
+      "from": "elem-2a1eAZeZ",
+      "to": "elem-LHKqKxyL"
+    },
+    {
+      "_id": "conn-1wLUHM55",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-1i91UDGy",
+      "to": "elem-UUtW1x2E"
+    },
+    {
+      "_id": "conn-2P4bCbw1",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-2a1eAZeZ",
+      "to": "elem-QHvm6t51"
+    },
+    {
+      "_id": "conn-3L9J0DuX",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-3EXzEqjb",
+      "to": "elem-GAoCTRuo"
+    },
+    {
+      "_id": "conn-3YXbVgp3",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-eMJd6jnN",
+      "to": "elem-QixQBXMK"
+    },
+    {
+      "_id": "conn-4ENUDWTm",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-T3A9dNAY",
+      "to": "elem-WxhEKlh4"
+    },
+    {
+      "_id": "conn-56hYq8j6",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-3LCNUAqK",
+      "to": "elem-3EXzEqjb"
+    },
+    {
+      "_id": "conn-77bmbUeY",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-UGQlOgcn",
+      "to": "elem-SxHu2Yws"
+    },
+    {
+      "_id": "conn-9ouNBZmy",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-6a2R0UXz",
+      "to": "elem-QHvm6t51"
+    },
+    {
+      "_id": "conn-Bari5mW2",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-2rXGimlz",
+      "to": "elem-C7QOXeNu"
+    },
+    {
+      "_id": "conn-BdJpcnWb",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-2a1eAZeZ",
+      "to": "elem-WxhEKlh4"
+    },
+    {
+      "_id": "conn-DJdhnvrv",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-inhdrHTf",
+      "to": "elem-I8HeMrV3"
+    },
+    {
+      "_id": "conn-DOHPgivQ",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-wjuHYZE6",
+      "to": "elem-icq3X8GX"
+    },
+    {
+      "_id": "conn-DYc9NreR",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-E2GspnDL",
+      "to": "elem-wjuHYZE6"
+    },
+    {
+      "_id": "conn-DdtwcjJX",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-08xBiYA1",
+      "to": "elem-AC8kLvdw"
+    },
+    {
+      "_id": "conn-Dw4mz5fM",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-Fz2JpMD6",
+      "to": "elem-3LCNUAqK"
+    },
+    {
+      "_id": "conn-Edm07pzq",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "Information"
+      },
+      "from": "elem-UGQlOgcn",
+      "to": "elem-dPNFlLYd"
+    },
+    {
+      "_id": "conn-F27lsbEi",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-SxHu2Yws",
+      "to": "elem-UUtW1x2E"
+    },
+    {
+      "_id": "conn-FMO9r1mt",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-pahIbgfM",
+      "to": "elem-E2GspnDL"
+    },
+    {
+      "_id": "conn-Fd1PNVed",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-dUEsHYXQ",
+      "to": "elem-LpkjM6er"
+    },
+    {
+      "_id": "conn-GJhOx4OG",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-wjuHYZE6",
+      "to": "elem-Fz2JpMD6"
+    },
+    {
+      "_id": "conn-HG7BefHr",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-GAoCTRuo",
+      "to": "elem-FYADYlNb"
+    },
+    {
+      "_id": "conn-HkPWT9T0",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-inhdrHTf",
+      "to": "elem-cBSxhaol"
+    },
+    {
+      "_id": "conn-KXRBqYp9",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-2a1eAZeZ",
+      "to": "elem-bTPhw5Uj"
+    },
+    {
+      "_id": "conn-KiKpNmpX",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-2a1eAZeZ",
+      "to": "elem-psz24tAN"
+    },
+    {
+      "_id": "conn-LqVcRsS2",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-eMJd6jnN",
+      "to": "elem-S0o9b0rU"
+    },
+    {
+      "_id": "conn-MI0giCsh",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-2a1eAZeZ",
+      "to": "elem-3EXzEqjb"
+    },
+    {
+      "_id": "conn-ORZbEhTX",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-T3A9dNAY",
+      "to": "elem-6a2R0UXz"
+    },
+    {
+      "_id": "conn-PhnHDWx4",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-sb2TN1oc",
+      "to": "elem-pahIbgfM"
+    },
+    {
+      "_id": "conn-SQgYWvaD",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-psz24tAN",
+      "to": "elem-dUEsHYXQ"
+    },
+    {
+      "_id": "conn-Tlbn7Zr8",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-3LCNUAqK",
+      "to": "elem-QHvm6t51"
+    },
+    {
+      "_id": "conn-UJ1Xzre1",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-2a1eAZeZ",
+      "to": "elem-C7QOXeNu"
+    },
+    {
+      "_id": "conn-UzOhrqq1",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-dHXvC31q",
+      "to": "elem-C7QOXeNu"
+    },
+    {
+      "_id": "conn-WCN4j5B6",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-6a2R0UXz",
+      "to": "elem-9XUbjh8i"
+    },
+    {
+      "_id": "conn-WckTq2Uo",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-inhdrHTf",
+      "to": "elem-UGQlOgcn"
+    },
+    {
+      "_id": "conn-Xs9LKKYk",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-2a1eAZeZ",
+      "to": "elem-4Unvw1xB"
+    },
+    {
+      "_id": "conn-XxFIfIAF",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-2a1eAZeZ",
+      "to": "elem-KPkTro5q"
+    },
+    {
+      "_id": "conn-YH2UqKpW",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-E2GspnDL",
+      "to": "elem-5knpJJK5"
+    },
+    {
+      "_id": "conn-YonkTdiR",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-dHXvC31q",
+      "to": "elem-E2GspnDL"
+    },
+    {
+      "_id": "conn-Z629TYvG",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-fCRRIqBY",
+      "to": "elem-2rXGimlz"
+    },
+    {
+      "_id": "conn-ZetSpAl0",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-fCRRIqBY",
+      "to": "elem-QHvm6t51"
+    },
+    {
+      "_id": "conn-ZmcggjG5",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-dHXvC31q",
+      "to": "elem-XpTlctEt"
+    },
+    {
+      "_id": "conn-anYYLC9F",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-wjuHYZE6",
+      "to": "elem-4Unvw1xB"
+    },
+    {
+      "_id": "conn-bbXgZxC4",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-LHKqKxyL",
+      "to": "elem-Zq8BekOO"
+    },
+    {
+      "_id": "conn-bjvzE6mV",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-FYADYlNb",
+      "to": "elem-BcixMymM"
+    },
+    {
+      "_id": "conn-cqNBnMUV",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-Zq8BekOO",
+      "to": "elem-5knpJJK5"
+    },
+    {
+      "_id": "conn-dE5ea1oV",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-inhdrHTf",
+      "to": "elem-uqymqAFo"
+    },
+    {
+      "_id": "conn-dye0o40Y",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-T3A9dNAY",
+      "to": "elem-GAoCTRuo"
+    },
+    {
+      "_id": "conn-eLbpSqYw",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-E2GspnDL",
+      "to": "elem-dPNFlLYd"
+    },
+    {
+      "_id": "conn-ee1Exr0M",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-BDIlQNSO",
+      "to": "elem-ZV6p94s4"
+    },
+    {
+      "_id": "conn-exAsidAa",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-XpTlctEt",
+      "to": "elem-5knpJJK5"
+    },
+    {
+      "_id": "conn-g9DRDy6d",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-1i91UDGy",
+      "to": "elem-BcixMymM"
+    },
+    {
+      "_id": "conn-h1u1SoT3",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-E2GspnDL",
+      "to": "elem-08xBiYA1"
+    },
+    {
+      "_id": "conn-iK3ieqhW",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-QixQBXMK",
+      "to": "elem-UUtW1x2E"
+    },
+    {
+      "_id": "conn-jYzlHaYP",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-nKRePJO3",
+      "to": "elem-LpkjM6er"
+    },
+    {
+      "_id": "conn-jjoffxdY",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-eMJd6jnN",
+      "to": "elem-D4slyfE2"
+    },
+    {
+      "_id": "conn-miU3pSFS",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-2a1eAZeZ",
+      "to": "elem-nKRePJO3"
+    },
+    {
+      "_id": "conn-n8UUdjS0",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-eMJd6jnN",
+      "to": "elem-h0S9pajX"
+    },
+    {
+      "_id": "conn-pw28dCmb",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-fCRRIqBY",
+      "to": "elem-Fz2JpMD6"
+    },
+    {
+      "_id": "conn-sMjiXq6C",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-2rXGimlz",
+      "to": "elem-8nNw9FBl"
+    },
+    {
+      "_id": "conn-tqiE2NuR",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-QNYVCbbd",
+      "to": "elem-uJ8uytkM"
+    },
+    {
+      "_id": "conn-usm74WaV",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-2a1eAZeZ",
+      "to": "elem-icq3X8GX"
+    },
+    {
+      "_id": "conn-uzNV6K7W",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-E2GspnDL",
+      "to": "elem-3LCNUAqK"
+    },
+    {
+      "_id": "conn-vMe6C7Ke",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-8nNw9FBl",
+      "to": "elem-znNboeK1"
+    },
+    {
+      "_id": "conn-vhGaCIZa",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-GAoCTRuo",
+      "to": "elem-sb2TN1oc"
+    },
+    {
+      "_id": "conn-vwn05yJD",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-KPkTro5q",
+      "to": "elem-GAoCTRuo"
+    },
+    {
+      "_id": "conn-wbd1D0Bs",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-Zq8BekOO",
+      "to": "elem-hlR2Dkh7"
+    },
+    {
+      "_id": "conn-yi8s0U7x",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-2a1eAZeZ",
+      "to": "elem-V91rI6jc"
+    }
+  ],
+  "loops": [],
+  "maps": [
+    {
+      "_id": "map-pWUuXTUY",
+      "name": "Impact Mining Methodology",
+      "description": "",
+      "scale": 1,
+      "center": {
+        "x": 0,
+        "y": 0
+      },
+      "defaultPerspective": "pers-gOEoMKpx",
+      "defaultElementBehavior": "fixed",
+      "defaultConnectionDirection": "directed",
+      "elements": [
+        {
+          "_id": "node-14WZOvP0",
+          "position": {
+            "x": 1161.9080558053859,
+            "y": 325.6835831956812
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-znNboeK1"
+        },
+        {
+          "_id": "node-4mXzOUCH",
+          "position": {
+            "x": 675.2888161161757,
+            "y": -384.96034502042784
+          },
+          "pinned": true,
+          "style": {
+            "borderColor": "#333",
+            "borderWidth": 5
+          },
+          "element": "elem-dHXvC31q"
+        },
+        {
+          "_id": "node-7B5I4Mda",
+          "position": {
+            "x": 580.0254927872206,
+            "y": -532.104145737609
+          },
+          "pinned": true,
+          "style": {
+            "borderColor": "#333",
+            "borderWidth": 5
+          },
+          "element": "elem-icq3X8GX"
+        },
+        {
+          "_id": "node-7IjCS5Ti",
+          "position": {
+            "x": -1025.7048559568907,
+            "y": -807.3856439747577
+          },
+          "pinned": true,
+          "style": {
+            "borderColor": "#333",
+            "borderWidth": 5
+          },
+          "element": "elem-sb2TN1oc"
+        },
+        {
+          "_id": "node-8JiOaNQx",
+          "position": {
+            "x": -1230.423436703978,
+            "y": -156.9025124117713
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-pahIbgfM"
+        },
+        {
+          "_id": "node-9VBJKT5N",
+          "position": {
+            "x": -497.72615226199406,
+            "y": -184.22807534262898
+          },
+          "pinned": true,
+          "style": {
+            "borderColor": "#333",
+            "borderWidth": 5,
+            "bullseyeColor": "",
+            "imageSize": "contain"
+          },
+          "element": "elem-2a1eAZeZ"
+        },
+        {
+          "_id": "node-9gxw7rm3",
+          "position": {
+            "x": -412.2654719519259,
+            "y": -612.45332059153
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-QHvm6t51"
+        },
+        {
+          "_id": "node-9w3E5Mqf",
+          "position": {
+            "x": -1186.195368723371,
+            "y": 220.75961260389275
+          },
+          "pinned": true,
+          "style": {
+            "borderColor": "#333",
+            "borderWidth": 5
+          },
+          "element": "elem-T3A9dNAY"
+        },
+        {
+          "_id": "node-D45pZ4nL",
+          "position": {
+            "x": 856.125883065064,
+            "y": -885.2317000728691
+          },
+          "pinned": true,
+          "style": {
+            "borderColor": "#333",
+            "borderWidth": 5
+          },
+          "element": "elem-Fz2JpMD6"
+        },
+        {
+          "_id": "node-F7vIeRrc",
+          "position": {
+            "x": 643.5376405435844,
+            "y": 217.23380108146907
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-LpkjM6er"
+        },
+        {
+          "_id": "node-GFFyFssS",
+          "position": {
+            "x": -170.77844072151467,
+            "y": -93.37093285468187
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-hlR2Dkh7"
+        },
+        {
+          "_id": "node-GmFXjwGU",
+          "position": {
+            "x": -15.328936419543902,
+            "y": 823.452898063882
+          },
+          "pinned": true,
+          "style": {
+            "bullseyeColor": ""
+          },
+          "element": "elem-E2GspnDL"
+        },
+        {
+          "_id": "node-KMfZQhUl",
+          "position": {
+            "x": -762.1846709185319,
+            "y": 986.7901557835582
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-BDIlQNSO"
+        },
+        {
+          "_id": "node-KRufso0T",
+          "position": {
+            "x": -198.39481430738732,
+            "y": -740.2479852558887
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-3LCNUAqK"
+        },
+        {
+          "_id": "node-Lz3D1nq8",
+          "position": {
+            "x": -19.69338463174201,
+            "y": 620.2208059550404
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-nKRePJO3"
+        },
+        {
+          "_id": "node-MgvMdN5f",
+          "position": {
+            "x": 1.6607710028022455,
+            "y": 5.824650856697957
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-r5lquO5j"
+        },
+        {
+          "_id": "node-O6U59tZT",
+          "position": {
+            "x": 852.4356116901166,
+            "y": 93.5872622783503
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-Zq8BekOO"
+        },
+        {
+          "_id": "node-PZBRTfHm",
+          "position": {
+            "x": -24.384530948243643,
+            "y": 177.11576551498345
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-dUEsHYXQ"
+        },
+        {
+          "_id": "node-SzhndwMk",
+          "position": {
+            "x": -264.2067194701433,
+            "y": 518.5585109368001
+          },
+          "pinned": true,
+          "style": {
+            "bullseyeColor": "",
+            "borderColor": "#333",
+            "borderWidth": 5
+          },
+          "element": "elem-C7QOXeNu"
+        },
+        {
+          "_id": "node-VgdKyhkX",
+          "position": {
+            "x": -559.7155491862696,
+            "y": -970.3833590172454
+          },
+          "pinned": true,
+          "style": {
+            "borderColor": "#333",
+            "borderWidth": 5
+          },
+          "element": "elem-ZV6p94s4"
+        },
+        {
+          "_id": "node-WZD2sNyn",
+          "position": {
+            "x": -65.17249047321513,
+            "y": 1148.0794519035219
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-AC8kLvdw"
+        },
+        {
+          "_id": "node-WdXkJ3Um",
+          "position": {
+            "x": 507.57871743782977,
+            "y": 663.2315391887785
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-V91rI6jc"
+        },
+        {
+          "_id": "node-XdJOOOpa",
+          "position": {
+            "x": -380.0941083968641,
+            "y": 643.4595918380162
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-08xBiYA1"
+        },
+        {
+          "_id": "node-YCpQGZJA",
+          "position": {
+            "x": 861.6935319938065,
+            "y": -138.27688738248432
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-2rXGimlz"
+        },
+        {
+          "_id": "node-YtMkpx3I",
+          "position": {
+            "x": 895.8718113354116,
+            "y": -695.1275716450867
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-wjuHYZE6"
+        },
+        {
+          "_id": "node-cE0BWqbs",
+          "position": {
+            "x": 956.604422677255,
+            "y": 706.9521648981362
+          },
+          "pinned": true,
+          "style": {
+            "borderColor": "#333",
+            "borderWidth": 5
+          },
+          "element": "elem-6a2R0UXz"
+        },
+        {
+          "_id": "node-e3m9dVSA",
+          "position": {
+            "x": -686.6129306591276,
+            "y": -450.5619360464233
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-LHKqKxyL"
+        },
+        {
+          "_id": "node-eej3xtFg",
+          "position": {
+            "x": 505.8331227689644,
+            "y": -282.86945624829536
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-3EXzEqjb"
+        },
+        {
+          "_id": "node-iKuIUEqJ",
+          "position": {
+            "x": 1179.4933750816338,
+            "y": -54.01725870964342
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-8nNw9FBl"
+        },
+        {
+          "_id": "node-idkKQEK4",
+          "position": {
+            "x": 599.2098098814321,
+            "y": 464.68765493849673
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-yOkBuf8F"
+        },
+        {
+          "_id": "node-j29e5mbP",
+          "position": {
+            "x": 673.1654595125085,
+            "y": -95.76349511944872
+          },
+          "pinned": true,
+          "style": {
+            "borderColor": "#333",
+            "borderWidth": 5
+          },
+          "element": "elem-FYADYlNb"
+        },
+        {
+          "_id": "node-jf3WPAWW",
+          "position": {
+            "x": -745.9640842208687,
+            "y": 90.02900518037949
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-KPkTro5q"
+        },
+        {
+          "_id": "node-jrF0Mgv8",
+          "position": {
+            "x": -784.534196904181,
+            "y": -199.78672123619728
+          },
+          "pinned": true,
+          "style": {
+            "borderColor": "#333",
+            "borderWidth": 5
+          },
+          "element": "elem-psz24tAN"
+        },
+        {
+          "_id": "node-l7JB14r8",
+          "position": {
+            "x": 964.7515960154834,
+            "y": -491.0073480931079
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-4Unvw1xB"
+        },
+        {
+          "_id": "node-l8mg0Dsy",
+          "position": {
+            "x": 720.368585904708,
+            "y": 998.8313932918325
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-dPNFlLYd"
+        },
+        {
+          "_id": "node-mEv6lqY2",
+          "position": {
+            "x": -558.6222064429845,
+            "y": 323.9240262029562
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-bTPhw5Uj"
+        },
+        {
+          "_id": "node-oexM6ODS",
+          "position": {
+            "x": 231.12748546632275,
+            "y": -76.40448135925186
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-5knpJJK5"
+        },
+        {
+          "_id": "node-sh2TPXri",
+          "position": {
+            "x": 202.05659942524744,
+            "y": -1188.3126252469463
+          },
+          "pinned": true,
+          "style": {
+            "borderColor": "#333",
+            "borderWidth": 5
+          },
+          "element": "elem-GAoCTRuo"
+        },
+        {
+          "_id": "node-u9M3NEUA",
+          "position": {
+            "x": 484.64820898517786,
+            "y": -1176.46619441786
+          },
+          "pinned": true,
+          "style": {
+            "bullseyeColor": "#fff0a5",
+            "borderColor": "#333",
+            "borderWidth": 5
+          },
+          "element": "elem-BcixMymM"
+        },
+        {
+          "_id": "node-y9SUFtGx",
+          "position": {
+            "x": -268.1748635251029,
+            "y": -1217.9597397194573
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-fCRRIqBY"
+        }
+      ],
+      "connections": [
+        {
+          "_id": "edge-0ViiZYqm",
+          "style": {},
+          "connection": "conn-0r97q4N3"
+        },
+        {
+          "_id": "edge-3N4Rsd41",
+          "style": {},
+          "connection": "conn-DOHPgivQ"
+        },
+        {
+          "_id": "edge-3i3a1joX",
+          "style": {},
+          "connection": "conn-vMe6C7Ke"
+        },
+        {
+          "_id": "edge-5IJ2DinP",
+          "style": {},
+          "connection": "conn-YonkTdiR"
+        },
+        {
+          "_id": "edge-9a7UeFou",
+          "style": {},
+          "connection": "conn-miU3pSFS"
+        },
+        {
+          "_id": "edge-9q1Vpryp",
+          "curvature": 0.20719491518729152,
+          "style": {},
+          "connection": "conn-HG7BefHr"
+        },
+        {
+          "_id": "edge-9tMXSZN6",
+          "style": {},
+          "connection": "conn-yi8s0U7x"
+        },
+        {
+          "_id": "edge-9udrjeq3",
+          "style": {},
+          "connection": "conn-SQgYWvaD"
+        },
+        {
+          "_id": "edge-A4Wbgvfk",
+          "style": {},
+          "connection": "conn-Tlbn7Zr8"
+        },
+        {
+          "_id": "edge-CBlRGDcT",
+          "style": {},
+          "connection": "conn-DYc9NreR"
+        },
+        {
+          "_id": "edge-ETTv3r61",
+          "style": {},
+          "connection": "conn-dye0o40Y"
+        },
+        {
+          "_id": "edge-GbEuzO1y",
+          "curvature": -0.29404647613835355,
+          "style": {},
+          "connection": "conn-Xs9LKKYk"
+        },
+        {
+          "_id": "edge-KLS6CG0L",
+          "style": {},
+          "connection": "conn-ZetSpAl0"
+        },
+        {
+          "_id": "edge-Lwln6TKo",
+          "style": {},
+          "connection": "conn-9ouNBZmy"
+        },
+        {
+          "_id": "edge-M19G29UR",
+          "style": {},
+          "connection": "conn-vwn05yJD"
+        },
+        {
+          "_id": "edge-NBg3XpAi",
+          "style": {},
+          "connection": "conn-h1u1SoT3"
+        },
+        {
+          "_id": "edge-OTJYTlID",
+          "style": {},
+          "connection": "conn-cqNBnMUV"
+        },
+        {
+          "_id": "edge-PRJTqhfc",
+          "style": {},
+          "connection": "conn-jYzlHaYP"
+        },
+        {
+          "_id": "edge-SKOK7xmG",
+          "style": {},
+          "connection": "conn-0QWemdhf"
+        },
+        {
+          "_id": "edge-TcvhDNd5",
+          "style": {},
+          "connection": "conn-anYYLC9F"
+        },
+        {
+          "_id": "edge-UO6lhYIA",
+          "style": {},
+          "connection": "conn-Bari5mW2"
+        },
+        {
+          "_id": "edge-UTteeky8",
+          "style": {},
+          "connection": "conn-Dw4mz5fM"
+        },
+        {
+          "_id": "edge-W1DB5qCn",
+          "style": {},
+          "connection": "conn-KXRBqYp9"
+        },
+        {
+          "_id": "edge-WBUKLn3D",
+          "style": {},
+          "connection": "conn-PhnHDWx4"
+        },
+        {
+          "_id": "edge-YtmQ5qoJ",
+          "style": {},
+          "connection": "conn-Z629TYvG"
+        },
+        {
+          "_id": "edge-ZqWvCOty",
+          "style": {},
+          "connection": "conn-pw28dCmb"
+        },
+        {
+          "_id": "edge-aCCFjZ4O",
+          "curvature": 0.2228989660435439,
+          "style": {},
+          "connection": "conn-usm74WaV"
+        },
+        {
+          "_id": "edge-aSdA6M4c",
+          "style": {},
+          "connection": "conn-56hYq8j6"
+        },
+        {
+          "_id": "edge-bjSStp6Q",
+          "style": {},
+          "connection": "conn-MI0giCsh"
+        },
+        {
+          "_id": "edge-cF57PqWp",
+          "style": {},
+          "connection": "conn-uzNV6K7W"
+        },
+        {
+          "_id": "edge-cObfvAFD",
+          "style": {},
+          "connection": "conn-3L9J0DuX"
+        },
+        {
+          "_id": "edge-e1yeT1NN",
+          "style": {},
+          "connection": "conn-FMO9r1mt"
+        },
+        {
+          "_id": "edge-fsT3REBJ",
+          "style": {},
+          "connection": "conn-UJ1Xzre1"
+        },
+        {
+          "_id": "edge-gGKC4hQy",
+          "style": {},
+          "connection": "conn-2P4bCbw1"
+        },
+        {
+          "_id": "edge-gjB960iQ",
+          "style": {},
+          "connection": "conn-vhGaCIZa"
+        },
+        {
+          "_id": "edge-hQEliOQd",
+          "style": {},
+          "connection": "conn-UzOhrqq1"
+        },
+        {
+          "_id": "edge-lbaMzAA7",
+          "style": {},
+          "connection": "conn-ee1Exr0M"
+        },
+        {
+          "_id": "edge-myXgzS3D",
+          "style": {},
+          "connection": "conn-YH2UqKpW"
+        },
+        {
+          "_id": "edge-njmmFFel",
+          "style": {},
+          "connection": "conn-eLbpSqYw"
+        },
+        {
+          "_id": "edge-odrx2Q6G",
+          "curvature": -0.06844100897462585,
+          "style": {},
+          "connection": "conn-bjvzE6mV"
+        },
+        {
+          "_id": "edge-pAagDEw9",
+          "style": {},
+          "connection": "conn-DdtwcjJX"
+        },
+        {
+          "_id": "edge-rH3ryjKi",
+          "style": {},
+          "connection": "conn-sMjiXq6C"
+        },
+        {
+          "_id": "edge-rUgtnngG",
+          "style": {},
+          "connection": "conn-XxFIfIAF"
+        },
+        {
+          "_id": "edge-sJPq23fJ",
+          "style": {},
+          "connection": "conn-Fd1PNVed"
+        },
+        {
+          "_id": "edge-sp2Mir7j",
+          "style": {},
+          "connection": "conn-ORZbEhTX"
+        },
+        {
+          "_id": "edge-t2Pj7RSG",
+          "style": {},
+          "connection": "conn-bbXgZxC4"
+        },
+        {
+          "_id": "edge-x8tLrSpK",
+          "style": {},
+          "connection": "conn-GJhOx4OG"
+        },
+        {
+          "_id": "edge-yWoYJ7cc",
+          "style": {},
+          "connection": "conn-KiKpNmpX"
+        },
+        {
+          "_id": "edge-zGcV5kJ4",
+          "style": {},
+          "connection": "conn-wbd1D0Bs"
+        }
+      ],
+      "loops": []
+    },
+    {
+      "_id": "map-5QruC3fk",
+      "name": "Literature Review",
+      "description": "you can change the axis in the settings :) https://blog.kumu.io/introducing-radar-plots-b46fc4c6e61e",
+      "scale": 1,
+      "center": {
+        "x": 0,
+        "y": 0
+      },
+      "defaultPerspective": "pers-gwkMgBm2",
+      "defaultElementBehavior": "fixed",
+      "defaultConnectionDirection": "undirected",
+      "elements": [
+        {
+          "_id": "node-3Pizom1y",
+          "position": {
+            "x": -193.52086520715528,
+            "y": -166.7169202270841
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-1i91UDGy"
+        },
+        {
+          "_id": "node-4X86W5S8",
+          "position": {
+            "x": -162.5496090254665,
+            "y": -449.90403352999743
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-QNYVCbbd"
+        },
+        {
+          "_id": "node-70LqdxuU",
+          "position": {
+            "x": 421.49394068823904,
+            "y": -226.47981745299984
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-fCn4osNZ"
+        },
+        {
+          "_id": "node-886CZ0bi",
+          "position": {
+            "x": -144.72606816509278,
+            "y": 191.39942441143856
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-AC8kLvdw"
+        },
+        {
+          "_id": "node-8LRBQA15",
+          "position": {
+            "x": 65.44855872767738,
+            "y": 347.49985581203026
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-uqymqAFo"
+        },
+        {
+          "_id": "node-A8vOJ9Oj",
+          "position": {
+            "x": -465.84980191553205,
+            "y": 171.0918095281174
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-h0S9pajX"
+        },
+        {
+          "_id": "node-C8UPn5Ew",
+          "position": {
+            "x": -327.23746645513233,
+            "y": -128.4642769916973
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-znNboeK1"
+        },
+        {
+          "_id": "node-FM5S4nj6",
+          "position": {
+            "x": -239.53363781623003,
+            "y": -17.5943892442659
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-QixQBXMK"
+        },
+        {
+          "_id": "node-GGW2TE7y",
+          "position": {
+            "x": -274.86865506755987,
+            "y": 246.50156499714666
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-UGQlOgcn"
+        },
+        {
+          "_id": "node-ICTAWWGO",
+          "position": {
+            "x": -465.07438768689246,
+            "y": -155.88721702688267
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-BcixMymM"
+        },
+        {
+          "_id": "node-OfRNNaQY",
+          "position": {
+            "x": -371.7965167227611,
+            "y": -312.5646514100889
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-9XUbjh8i"
+        },
+        {
+          "_id": "node-Pza0AZ6m",
+          "position": {
+            "x": 182.8368071994602,
+            "y": -317.3076297095763
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-lUttEQ6I"
+        },
+        {
+          "_id": "node-Q2TZbCJP",
+          "position": {
+            "x": -214.21423778079938,
+            "y": 303.1224711096807
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-dPNFlLYd"
+        },
+        {
+          "_id": "node-QyzS8BMj",
+          "position": {
+            "x": 335.4766378397686,
+            "y": -347.33625078534067
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-tmtQRkmW"
+        },
+        {
+          "_id": "node-azoXsj1x",
+          "position": {
+            "x": -220.32170463366035,
+            "y": -304.34215033716794
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-I8HeMrV3"
+        },
+        {
+          "_id": "node-dwmyYTKU",
+          "position": {
+            "x": 124.43771179923291,
+            "y": -206.22812712080616
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-UUtW1x2E"
+        },
+        {
+          "_id": "node-fYGUITzn",
+          "position": {
+            "x": 230.93692011974818,
+            "y": -53.297162915275976
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-SxHu2Yws"
+        },
+        {
+          "_id": "node-m2OZafJo",
+          "position": {
+            "x": 144.6453644396629,
+            "y": 72.94142310405883
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-GAbjzVga"
+        },
+        {
+          "_id": "node-mYMRxRq6",
+          "position": {
+            "x": -51.364894055029396,
+            "y": 206.69110571079156
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-D4slyfE2"
+        },
+        {
+          "_id": "node-sh585OYq",
+          "position": {
+            "x": -211.5788513363238,
+            "y": 88.86870660533988
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-fCRRIqBY"
+        },
+        {
+          "_id": "node-tTUbhza8",
+          "position": {
+            "x": 204.3121430154767,
+            "y": 283.77963542191344
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-inhdrHTf"
+        },
+        {
+          "_id": "node-tWphtbVE",
+          "position": {
+            "x": -341.4388782600492,
+            "y": 137.1478063211762
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-eMJd6jnN"
+        },
+        {
+          "_id": "node-upRbW5LA",
+          "position": {
+            "x": 379.2948023159762,
+            "y": -14.203074172700138
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-CXzSmFp2"
+        },
+        {
+          "_id": "node-xmvkXurl",
+          "position": {
+            "x": 100.08112991801588,
+            "y": -480.40948295729686
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-asSqVUGk"
+        },
+        {
+          "_id": "node-zcs54jyb",
+          "position": {
+            "x": 224.8869303973969,
+            "y": -419.75259001774253
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-LZR05zSm"
+        }
+      ],
+      "connections": [
+        {
+          "_id": "edge-7GkhEZbg",
+          "style": {},
+          "connection": "conn-3YXbVgp3"
+        },
+        {
+          "_id": "edge-AXbMUYvX",
+          "style": {},
+          "connection": "conn-iK3ieqhW"
+        },
+        {
+          "_id": "edge-UCfW9aer",
+          "style": {},
+          "connection": "conn-dE5ea1oV"
+        },
+        {
+          "_id": "edge-XYiNvTqm",
+          "style": {},
+          "connection": "conn-jjoffxdY"
+        },
+        {
+          "_id": "edge-geH9MFNG",
+          "style": {},
+          "connection": "conn-n8UUdjS0"
+        },
+        {
+          "_id": "edge-ofOC8lwJ",
+          "style": {},
+          "connection": "conn-DJdhnvrv"
+        }
+      ],
+      "loops": []
+    },
+    {
+      "_id": "map-pS8dPqab",
+      "name": "Ugandqa Sustainable Development Targets",
+      "description": "From https://idea.usaid.gov/v0/data_domains/2/metadata_download.csv KPIS\nThis is the data set \nhttps://docs.google.com/spreadsheets/d/1j9y9_UVo5ojrj_V1hu-gQf2BmSbfTk3Ga0fROl0MrjQ/edit#gid=0",
+      "scale": 1,
+      "center": {
+        "x": 0,
+        "y": 0
+      },
+      "src": "https://docs.google.com/spreadsheets/d/1j9y9_UVo5ojrj_V1hu-gQf2BmSbfTk3Ga0fROl0MrjQ/edit?usp=sharing",
+      "defaultPerspective": "pers-9uLTqOlw",
+      "defaultElementBehavior": "fixed",
+      "defaultConnectionDirection": "directed"
+    }
+  ],
+  "perspectives": [
+    {
+      "_id": "pers-9uLTqOlw",
+      "name": "Metrics",
+      "style": "@settings {\n  template: causal-loop;\n  theme: light;\n  element-flag: \"Beneficiaries\" with neon2;\n  layout: force;\n  layout-preset: dense;\n}\n\n"
+    },
+    {
+      "_id": "pers-gwkMgBm2",
+      "name": "Systemic Visis",
+      "style": "@controls {\n  bottom {\n    showcase {\n      target: element;\n      by: \"result level\";\n      as: buttons;\n      multiple: true;\n      default: select-none;\n      mode: normal;\n    }\n  }\n}\n\n@settings {\n  template: radar;\n  radar-rings: INTENT /(Resource Allocation and Sustainable Development), DESIGN (Information Systems for Decision Making), FEEDBACKS (Energy for Value), PARAMETERS;\n  radar-axes: INDICATOR, SYSTEMS, INNOVATION, STRATEGY, ACTION;\n  element-scale: scale(\"Technologies\", 2, 3);\n  bridge: 0;\n  element-color: categorize(\"Result Level\", neon2);\n  cluster: [\"element type\"=\"Sustainable Development\"] by \"Element Type\", [\"element type\"=\"Humane\"] by \"Element Type\", [\"element type\"=\"Resource Scarcity\"] by \"Element Type\";\n}\n\n"
+    },
+    {
+      "_id": "pers-gOEoMKpx",
+      "name": "Systems Change Theory",
+      "style": "@controls {\n  bottom {\n    showcase {\n      target: element;\n      by: \"element type\";\n      as: buttons;\n      multiple: true;\n      default: show-all;\n      mode: normal;\n    }\n  }\n}\n\n@settings {\n  template: systems;\n  radar-axes: Prolem, Input, Output, Outcome, Impact;\n  radar-rings: Intent, Design, Feedback, Parameters;\n  radar-ring-size: 525;\n  radar-ring-size-inner: 425;\n  radar: true;\n  radar-font-size: 30;\n  radar-ring-opacity: 0.05;\n  cluster: [\"element type\"=\"Sustainable Development\"] by \"Element Type\", [\"element type\"=\"Humane\"] by \"Element Type\", [\"element type\"=\"Resource Scarcity\"] by \"Element Type\";\n  theme: light;\n  element-color: categorize(\"Element Type\", neon2);\n}\n\n"
+    },
+    {
+      "_id": "pers-vKsQD3MQ",
+      "name": "Untitled view (3)",
+      "style": "@settings {\n  template: causal-loop;\n}\n\n"
+    }
+  ]
+}
